@@ -1,0 +1,238 @@
+/* Reset default styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    
+}
+
+
+
+/* Header styles */
+.header {
+    background-color: orange;
+    text-align: center;
+    padding: 20px;
+}
+
+#title {
+    color: rgb(19, 66, 70);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+
+/* Content styles */
+.content {
+    width: 300px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 7px;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content span {
+    display: block;
+    font-size: 100px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.content button {
+    background-color: palevioletred;
+    border: none;
+    padding: 8px 20px;
+    font-size: 18px;
+    color: darkblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Like-dislike section styles */
+.like-dislike {
+    width: 300px;
+    padding: 20px;
+    background-color: burlywood;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.like-dislike button {
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.like-dislike span {
+    font-size: 14px;
+    margin-left: 5px;
+    
+}
+
+#like-btn {
+    background-color: #4CAF50;
+    color: rgb(3, 244, 7);
+    margin-right: 10px;
+}
+
+#dislike-btn {
+    background-color: #f44336;
+    color: rgb(236, 110, 110);
+}
+
+/* Comment section styles */
+.comment-section {
+    width: 300px;
+    padding: 20px;
+    background-color: gold;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.comment-section h2 {
+    margin-bottom: 10px;
+}
+
+#comment-input {
+    width: calc(100% - 20px);
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: rgb(196, 165, 165);
+}
+
+#submit-comment-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* Bonus section styles */
+.bonus-section {
+    width: 300px;
+    padding: 20px;
+    background-color: lightblue;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.bonus-section h2 {
+    margin-bottom: 10px;
+}
+
+#bonus-form {
+    margin-bottom: 10px;
+}
+
+#bonus-form label {
+    display: block;
+}
+
+#bonus-form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #6ccef1;
+}
+
+#bonus-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.dark-mode:hover {
+    filter: brightness
+}
+
+
+body {
+    transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif;
+    background-color: mediumslateblue;
+}
+
+h1 {
+    color: brown;
+}
+
+.blue-bg {
+    background-color: #1e2a32;
+}
+
+.green-bg {
+    background-color: #ef1279;
+}
+
+.red-bg {
+    background-color: #e74c3c;
+}
+
+
+
+/* Style the dropdown menu */
+#color-select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #f7040475;
+    background-color: #be1a1a17;
+    color: #333;
+
+  }
+  
+  /* Style the dropdown arrow */
+  #color-select::after {
+    content: '\25BC'; /* Unicode character for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensure the arrow doesn't interfere with selection */
+  }
+
+
+  .comment {
+    background-color: rgb(192, 200, 239);
+    border: 1px solid #e82525;
+    border-radius: 5px;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+
+.color-select-container {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block; /* Ensures the container only takes up as much width as necessary */
+}

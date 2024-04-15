@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Facts Generator</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="title">Random Facts Generator</h1>
+    </header>
+
+   
+
+    <h1>Change Page Color</h1>
+    <label for="color-select">Select a color:</label>
+    <select id="color-select">
+        <option value="default">Lavender(default)</option>
+        <option value="blue">Masculine</option>
+        <option value="green">Cherry</option>
+        <option value="red">Flame</option>
+    </select>
+
+
+
+    <div class="main-container">
+        <div class="content">
+            <span>&#x1F393;</span>
+            <p id="fact"></p>
+            <button id="btn" class="dark-mode">Get Random Fact</button>
+        </div>
+
+        <div class="like-dislike">
+            <button id="like-btn"><i class="fa fa-thumbs-up"></i></button>
+            <span id="like-count">0</span>
+            <button id="dislike-btn"><i class="fa fa-thumbs-down"></i></button>
+            <span id="dislike-count">0</span>
+        </div>
+
+        <div class="comment-section">
+            <h2>Comments</h2>
+            <div id="comments-container">
+                <!-- Comments will be added dynamically here -->
+            </div>
+            <textarea id="comment-input" placeholder="Write your comment here"></textarea>
+            <button id="submit-comment-btn" class="dark-mode">Submit</button>
+        </div>
+
+        <div class="bonus-section">
+            <h2>Bonus Facts</h2>
+            <form id="bonus-form">
+                <label for="fact-number">Enter a number between 1 and 5:</label>
+                <input type="number" id="fact-number" min="1" max="5" required>
+                <button type="submit" class="dark-mode">Get Bonus Fact</button>
+            </form>
+            <div id="bonus-fact"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
